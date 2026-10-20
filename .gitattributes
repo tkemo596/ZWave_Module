@@ -1,0 +1,17 @@
+# Normalize to LF in the repository; check out platform-appropriate line endings.
+* text=auto eol=lf
+
+# Windows-only scripts must keep CRLF or cmd.exe and PowerShell misbehave.
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# The Gradle wrapper script is executed by sh; it must stay LF even on Windows.
+gradlew text eol=lf
+
+# Never touch these.
+*.jar   binary
+*.dll   binary
+*.modl  binary
+*.png   binary
+*.ico   binary

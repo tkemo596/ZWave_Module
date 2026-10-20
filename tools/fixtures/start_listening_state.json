@@ -1,0 +1,283 @@
+{
+ "driver": {
+  "logConfig": {},
+  "statisticsEnabled": false
+ },
+ "controller": {
+  "homeId": 3735928559,
+  "ownNodeId": 1,
+  "sdkVersion": "7.21.3",
+  "type": 1
+ },
+ "nodes": [
+  {
+   "nodeId": 1,
+   "index": 0,
+   "status": 4,
+   "ready": true,
+   "isControllerNode": true,
+   "name": "",
+   "location": "",
+   "deviceConfig": {
+    "manufacturer": "Nabu Casa",
+    "label": "ZWA-2",
+    "description": "Home Assistant Connect ZWA-2"
+   },
+   "values": []
+  },
+  {
+   "nodeId": 5,
+   "status": 4,
+   "ready": true,
+   "isControllerNode": false,
+   "name": "Garage Light",
+   "location": "Garage",
+   "firmwareVersion": "1.30",
+   "deviceConfig": {
+    "manufacturer": "Zooz",
+    "label": "ZEN71",
+    "description": "On/Off Switch"
+   },
+   "values": [
+    {
+     "endpoint": 0,
+     "commandClass": 37,
+     "commandClassName": "Binary Switch",
+     "property": "currentValue",
+     "propertyName": "currentValue",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "boolean",
+      "readable": true,
+      "writeable": false,
+      "label": "Current value"
+     },
+     "value": false
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 37,
+     "commandClassName": "Binary Switch",
+     "property": "targetValue",
+     "propertyName": "targetValue",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "boolean",
+      "readable": false,
+      "writeable": true,
+      "label": "Target value"
+     }
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 112,
+     "commandClassName": "Configuration",
+     "property": 1,
+     "propertyName": "LED indicator",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "LED indicator",
+      "min": 0,
+      "max": 3
+     },
+     "value": 0
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 134,
+     "commandClassName": "Version",
+     "property": "firmwareVersions",
+     "propertyName": "firmwareVersions",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "string[]",
+      "readable": true,
+      "writeable": false
+     },
+     "value": [
+      "1.30"
+     ]
+    }
+   ]
+  },
+  {
+   "nodeId": 7,
+   "status": 1,
+   "ready": true,
+   "name": "Hall Sensor",
+   "location": "Hall",
+   "deviceConfig": {
+    "manufacturer": "Aeotec",
+    "label": "ZWA024",
+    "description": "MultiSensor 7"
+   },
+   "values": [
+    {
+     "endpoint": 1,
+     "commandClass": 49,
+     "commandClassName": "Multilevel Sensor",
+     "property": "Air temperature",
+     "propertyName": "Air temperature",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Air temperature",
+      "unit": "°F"
+     },
+     "value": 71.6
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 113,
+     "commandClassName": "Notification",
+     "property": "Home Security",
+     "propertyName": "Home Security",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Motion sensor status",
+      "states": {
+       "0": "idle",
+       "8": "Motion detection"
+      }
+     },
+     "propertyKey": "Motion sensor status",
+     "propertyKeyName": "Motion sensor status",
+     "value": 0
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 50,
+     "commandClassName": "Meter",
+     "property": "value",
+     "propertyName": "value",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Electric Consumption [kWh]",
+      "unit": "kWh"
+     },
+     "propertyKey": 65537,
+     "propertyKeyName": "Electric_kWh_Consumed",
+     "value": 12.34
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 132,
+     "commandClassName": "Wake Up",
+     "property": "wakeUpInterval",
+     "propertyName": "wakeUpInterval",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Wake Up interval",
+      "unit": "seconds"
+     },
+     "value": 3600
+    }
+   ]
+  },
+  {
+   "nodeId": 9,
+   "status": 3,
+   "ready": true,
+   "name": "Kitchen Dimmer",
+   "location": "Kitchen",
+   "deviceConfig": {
+    "manufacturer": "Zooz",
+    "label": "ZEN72",
+    "description": "Dimmer"
+   },
+   "values": [
+    {
+     "endpoint": 0,
+     "commandClass": 38,
+     "commandClassName": "Multilevel Switch",
+     "property": "currentValue",
+     "propertyName": "currentValue",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Current value",
+      "min": 0,
+      "max": 99
+     },
+     "value": 40
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 38,
+     "commandClassName": "Multilevel Switch",
+     "property": "targetValue",
+     "propertyName": "targetValue",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Target value",
+      "min": 0,
+      "max": 99
+     },
+     "value": 40
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 38,
+     "commandClassName": "Multilevel Switch",
+     "property": "duration",
+     "propertyName": "duration",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "duration",
+      "readable": true,
+      "writeable": true
+     },
+     "value": {
+      "value": 2,
+      "unit": "seconds"
+     }
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 38,
+     "commandClassName": "Multilevel Switch",
+     "property": "Up",
+     "propertyName": "Up",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "boolean",
+      "readable": false,
+      "writeable": true
+     }
+    },
+    {
+     "endpoint": 0,
+     "commandClass": 38,
+     "commandClassName": "Multilevel Switch",
+     "property": "Up!",
+     "propertyName": "Up!",
+     "ccVersion": 1,
+     "metadata": {
+      "type": "boolean",
+      "readable": false,
+      "writeable": true
+     }
+    }
+   ]
+  }
+ ]
+}

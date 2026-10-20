@@ -1,0 +1,11 @@
+Z-Wave JS Driver for Ignition
+Copyright 2026 Arrington Automation Incorporated
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It communicates with Z-Wave JS (https://github.com/zwave-js), MIT-licensed, which is installed
+separately and not distributed with this product. Z-Wave is a trademark of Silicon Labs.
+Ignition is a trademark of Inductive Automation; this is an independent module, not an
+Inductive Automation product.
+
+The Gradle wrapper (gradlew, gradlew.bat, gradle/wrapper/) is Apache-2.0, copyright Gradle, Inc.
